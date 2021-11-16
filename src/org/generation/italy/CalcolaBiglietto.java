@@ -6,15 +6,17 @@ public class CalcolaBiglietto {
 
 	public static void main(String[] args) {
 		
+		//inizio scanner
 		Scanner scanner = new Scanner(System.in);
 		
+		//input variabili
 		double numberKilo;
 		int agePerson;
 		double discountMin = 0.2;
 		double discountOver = 0.4;
 		double priceKilo = 0.21;
 		
-		
+		//input da tastiera
 		System.out.print("Insert number kilometres: ");
 		numberKilo = scanner.nextDouble();
 		System.out.print("Insert Age: ");
@@ -29,7 +31,7 @@ public class CalcolaBiglietto {
 			double ticketPrice = numberKilo * priceKilo;
 			System.out.println("Ticket price without discount: " + ticketPrice);
 		
-		
+		//istruzioni condizionali
 		if(agePerson < 17) {
 			//sconto min-18
 			ticketPrice = ticketPrice - (ticketPrice * discountMin);
